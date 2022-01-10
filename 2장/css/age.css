@@ -1,0 +1,29 @@
+body {
+    text-align: center;
+}
+
+/* 버튼 설정 */
+.btn {
+    margin-top: 50px;
+    font-weight: 400;
+    color: #fff;
+    background-color: #007bff;
+    text-align: center;
+    vertical-align: center;
+    border: 1px solid blue;
+    padding: 5px;
+}
+
+/* 마우스를 버튼위에 올렸을 때 */
+.btn:hover {
+    color: #fff;
+    background-color: aquamarine;
+    border-color: aquamarine;
+}
+
+.show{
+    margin-top: 50px   ;
+    page-break-after: 20px 30px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}

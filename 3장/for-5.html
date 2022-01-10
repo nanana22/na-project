@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문-5(사용자 입력 이용)</title>
+</head>
+<body>
+    <script>
+
+        var dan = prompt ("구구단을 외우자, 구구단을 외우자. 몇 단을 외울까?", "숫자를 입력해주세요");
+        
+        //string =-> number 형변환
+        dan = parseInt(dan);
+
+        for(var i=1; i<=9; i++){
+            document.write( dan + " X " + i + " = " + (dan*i) + " 입니다~ <br>");
+        }
+
+        document.write("다 외우셨죠? 수고하셨습니다");
+        
+    </script>
+</body>
+</html>

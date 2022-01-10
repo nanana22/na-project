@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>do-while 실질적 사용 예제</title>
+</head>
+<body>
+    <script>
+
+        //do-while은 최소 한 번은 실행.
+        //사용자의 의도를 물어보는 프로그램에 사용
+        
+        var inputString = null;
+
+        alert("메시지를 입력하세요.");
+        alert("프로그램을 종료하려면 Q를 입력하세요.");
+
+        do{
+            inputString = prompt("메시지를 입력하세요.");
+            document.write(inputString + "<br>");
+        }while(!(inputString == "Q"));  
+        //Q를 입력하면 true-루프실행, Q가 아니면 false-루프탈출 (!-논리부정연산자)
+
+
+        document.write("프로그램 종료");
+
+
+    </script>
+</body>
+</html>

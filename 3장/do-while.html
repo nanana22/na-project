@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문(do-while))</title>
+</head>
+<body>
+    <script>
+        // 1부터 100까지의 합계 구하기
+        var sum = 0; //누적할 값
+        var i = 1;
+
+        //do-while문은 초기값, 조건식, 증감식이 따로 떨어져 있으므로
+        //for문에 비하여 가독성이 떨어진다. 
+        //do-while문은 사용자에게 의사를 먼저 물어보고 루핑을 할지 말지 결정하는 프로그램 전용.
+        //do-while문은 최소 한 번은 실행된다. (조건문이 뒤에 있으므로.)
+
+        
+        do{ 
+            
+            sum += i;
+            document.write( sum + ", " + i + "<br>");
+            i++;
+
+        }while( i<=100)
+
+        document.write("1~" + (i-1) + "까지의 합은 " + sum + "입니다~ 멋지죠? 빠르죠? ");
+
+    </script>
+</body>
+</html>
