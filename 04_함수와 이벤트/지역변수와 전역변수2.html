@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지역변수와 전역변수</title>
+</head>
+<body>
+    <script>
+
+        //전역변수: 프로그램 어디서든 사용가능, 프로그램 종료시에 함께 소멸
+        //지역변수: 함수나 {}안에 선언되어 있고, 범위는 {}안이며, 함수나 {} 가 종료시에 함께 소멸
+        var name = "global";    //전역변수 선언과 동시에 초기화
+
+        
+        function func1(){
+            var name = "local1";     //지역변수를 선언과 동시에 초기화
+            document.write("name = " + name + "<br>");
+        }
+
+
+        function func2(){
+            var name = "local2";     //지역변수를 선언과 동시에 초기화
+            document.write("name = " + name + "<br>");
+        }
+
+
+        function func3(){
+            name = "local3";     //함수 범위 밖으 ㅣ전역변수 내용을 덮어쓴다.
+            document.write("name = " + name + "<br>");  //global 출력
+        }
+        
+
+
+
+
+        //함수의 {} 범위 밖에서 변수를 불러오므로 전역변수가 출력
+        document.write("name = " +name + "<br>");   
+
+        
+        func1();
+        func2();
+        func3();   
+        document.write("name = " + name + "<br>"); //var=global에 local3라는 값을 덮어쓴다
+
+    </script>
+</body>
+</html>

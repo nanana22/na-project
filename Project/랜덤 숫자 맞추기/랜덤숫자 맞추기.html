@@ -16,7 +16,7 @@
         while(true){
             var count = 0;  //사용자의 시도 횟수
             low = 0;
-            high = Math.floor(Math.random() * 100);
+            high = 100;
 
             //
             card = Math.floor(Math.random() * 100);    //0~99까지의 난수를 발생
@@ -45,7 +45,7 @@
                 else{
 
                     //정답
-                    if(n == card){
+                    if(n==card){
                         alert("정답입니다. 짝짝짝");
                         break;
                     }
